@@ -68,7 +68,7 @@ public class HomePage {
     action.moveToElement(itemHover).moveToElement(xButton).click().build().perform();
   }
 
-  public void toggleItem(WebElement todoItem){
+  public void toggleItem(WebElement todoItem) {
     Actions action = new Actions(driver);
 
     //interrogate list
@@ -77,5 +77,12 @@ public class HomePage {
     WebElement toggleButton = driver.findElement(By.className("toggle"));
     //perform action on the button
     action.moveToElement(itemHover).moveToElement(toggleButton).click().build().perform();
+  }
+
+  public boolean findItemInList(String text) {
+
+    return driver.findElements(By.className("view")).stream()
+        .anyMatch(todoItem -> todoItem.getText().equals(text));
+
   }
 }
