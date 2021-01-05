@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Selenium-e2e-todoList" />
+        <module name="todoList-API-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Selenium-e2e-todoList" target="1.8" />
+      <module name="todoList-API-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
