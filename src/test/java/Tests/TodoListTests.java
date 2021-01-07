@@ -25,8 +25,8 @@ public class TodoListTests {
     driver = new ChromeDriver();
 
     driver.navigate().to("http://localhost:3000/");
-  }
 
+  }
 
   /*
   GIVEN I am at the todo page
@@ -49,6 +49,7 @@ public class TodoListTests {
     list.deleteItem(list.getTodoList().get(0));
 
   }
+
   /*
   GIVEN I am at the todo page
   AND there is an item on the list
