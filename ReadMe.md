@@ -1,11 +1,13 @@
 ## SDET Capstone Project - Todo List Testing
 
 #### [Requirements Specifications (SRS & User Stories)](https://docs.google.com/document/d/1tAbYqeIHtvmGi213qa-96b0Z5ntbx_blQh7fjKgur3E/edit?usp=sharing)
+#### [Test Plan](https://docs.google.com/document/d/1eItVlCqdWSt3oH4TBR_kqew5ZWw0jYQKTYfLongx5bI/edit?usp=sharing)
 #### [Capstone Functional Requirements](https://docs.google.com/document/d/1J6dbCcXrX6uprZc2gRZx30behGbY9d_eljjhi-SbtDg/edit?usp=sharing)
 #### [Defect Report](https://docs.google.com/document/d/1opNwyDQ7BgyL_2lfo_qGtPovjUSRMyGabTmUe0xXDZE/edit?usp=sharing)
 
 
 ### Pre Requisites
+- [Original repo link](https://github.com/dpinedacat/todoList-testing)
 - Import into IntelliJ as Maven project.
 
 
