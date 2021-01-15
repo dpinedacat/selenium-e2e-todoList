@@ -1,13 +1,22 @@
 ## SDET Capstone Project - Todo List Testing
 
-### [Requirements Specifications (SRS & User Stories)](https://docs.google.com/document/d/1tAbYqeIHtvmGi213qa-96b0Z5ntbx_blQh7fjKgur3E/edit?usp=sharing)
-### [Capstone Functional Requirements](https://docs.google.com/document/d/1J6dbCcXrX6uprZc2gRZx30behGbY9d_eljjhi-SbtDg/edit?usp=sharing)
-### [Defect Report](https://docs.google.com/document/d/1opNwyDQ7BgyL_2lfo_qGtPovjUSRMyGabTmUe0xXDZE/edit?usp=sharing)
+#### [Requirements Specifications (SRS & User Stories)](https://docs.google.com/document/d/1tAbYqeIHtvmGi213qa-96b0Z5ntbx_blQh7fjKgur3E/edit?usp=sharing)
+#### [Capstone Functional Requirements](https://docs.google.com/document/d/1J6dbCcXrX6uprZc2gRZx30behGbY9d_eljjhi-SbtDg/edit?usp=sharing)
+#### [Defect Report](https://docs.google.com/document/d/1opNwyDQ7BgyL_2lfo_qGtPovjUSRMyGabTmUe0xXDZE/edit?usp=sharing)
 
 
 ### Pre Requisites
-
 - Import into IntelliJ as Maven project.
+
+
+### TodoMVC app
+Simple todoMVC app build with Vue.js, originally forked from [testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress).
+
+### How to install and run app
+1. `npm install`
+2. `npm start`
+3. open app on http://localhost:3000
+
 
 
 ***Postman Usage***
