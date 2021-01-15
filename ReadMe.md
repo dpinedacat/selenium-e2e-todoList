@@ -1,4 +1,9 @@
-## Todo List REST Assured API Testing
+## SDET Capstone Project - Todo List Testing
+
+### [Requirements Specifications (SRS & User Stories)](https://docs.google.com/document/d/1tAbYqeIHtvmGi213qa-96b0Z5ntbx_blQh7fjKgur3E/edit?usp=sharing)
+### [Capstone Functional Requirements](https://docs.google.com/document/d/1J6dbCcXrX6uprZc2gRZx30behGbY9d_eljjhi-SbtDg/edit?usp=sharing)
+### [Defect Report](https://docs.google.com/document/d/1opNwyDQ7BgyL_2lfo_qGtPovjUSRMyGabTmUe0xXDZE/edit?usp=sharing)
+
 
 ### Pre Requisites
 
@@ -15,6 +20,8 @@ https://www.getpostman.com/collections/f33c43ef9aaef2530e48
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f33c43ef9aaef2530e48)
 
+
+---
 #### GET /todos
 Returns an array of all todo items.
 
@@ -38,3 +45,54 @@ Deletes todo item with given id.
 ---
 #### DELETE /todos
 Deletes all todos.
+
+---
+#### POST /signup
+Creates a new account. 
+**Example payload:**
+```json
+{
+  "email": "email@example.com",
+  "password": "abc123"
+}
+```
+**Example error statuses:**
+
+`409 (Conflict)` - Account already exists
+
+`401 (Unauthorized)` - Email or password was not provided
+
+**Request headers:**
+
+`sendwelcomeemail: true` - Sends welcome email to signed up user
+
+**Response headers:**
+
+`Set-Cookie: "auth=true;"`
+
+---
+#### POST /login
+Logs into a new account.
+
+**Example payload:**
+```json
+{
+  "email": "email@example.com",
+  "password": "abc123"
+}
+```
+**Response headers:**
+
+`Set-Cookie: "auth=true;"`
+
+**Example error statuses:**
+
+`401 (Unauthorized)` - Wrong email or password
+
+---
+#### POST /reset
+Deletes all todos and all accounts.
+
+---
+#### DELETE /accounts
+Deletes all accounts.

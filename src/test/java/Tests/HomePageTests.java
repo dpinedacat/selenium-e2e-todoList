@@ -16,7 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class TodoListTests {
+public class HomePageTests {
   static WebDriver driver;
 
   @BeforeClass
@@ -150,14 +150,12 @@ public class TodoListTests {
     for (int i = 0; i < updatedList.size(); i++){
       Assert.assertEquals(updatedList.get(i), todoList.get(i));
     }
+    list.deleteItem(list.getTodoList().get(0));
+    list.deleteItem(list.getTodoList().get(0));
   }
 
   @AfterClass
   public static void closeBrowser() {
-    //clear out list
-    HomePage list = new HomePage(driver);
-    list.deleteItem(list.getTodoList().get(0));
-    list.deleteItem(list.getTodoList().get(0));
     // quit the driver
     driver.close();
     driver.quit();
