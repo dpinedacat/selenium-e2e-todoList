@@ -12,7 +12,7 @@
 
 
 ### TodoMVC app
-Simple todoMVC app build with Vue.js, originally forked from [testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress).
+Simple todoMVC app build with Vue.js [TodoMVC App](https://github.com/filiphric/udemy-cypress-course).
 
 ### How to install and run app
 1. `npm install`
@@ -48,7 +48,19 @@ Creates a todo item.
   "id": 1
 }
 ```
+
 ---
+#### PATCH /todos/{id}
+Edits todo item, usually to change `completed` state. {id} stands for todo id.
+
+**Example payload:**
+```json
+{
+  "completed": true
+}
+```
+---
+
 
 #### DELETE /todos/{id}
 Deletes todo item with given id.
@@ -56,6 +68,10 @@ Deletes todo item with given id.
 ---
 #### DELETE /todos
 Deletes all todos.
+
+---
+#### POST /todos/seed
+Seed an array of todos. Payload needs to be an array of objects, containing todos. This request rewrites all todos.
 
 ---
 #### POST /signup
@@ -107,3 +123,7 @@ Deletes all todos and all accounts.
 ---
 #### DELETE /accounts
 Deletes all accounts.
+
+---
+#### POST /accounts/seed
+Seed an array of accounts. Payload needs to be an array of objects, containing accounts. This request rewrites all accounts.
